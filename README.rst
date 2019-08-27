@@ -372,6 +372,14 @@ And then in the shell::
   chmod +x linux-armv7							# Gives the script execution permission.
   ./linux-armv7 bash							# Runs the helper script with the argument "bash", which starts an interactive container using your extended image.
 
+How to create a new custom image ?
+----------------------------------
+This section describes how to build your custom made `dockcross` images. I am tryin to us the LLVM clang compiler, for more information see [here](https://clang.llvm.org/).
+ 1. Use ``make display_images`` in order to show a list of available images.
+ 2. Copy a reference image e.g. ``windows-static-x86`` as a base.
+
+
+
 
 What is the difference between `dockcross` and `dockbuild` ?
 ------------------------------------------------------------
