@@ -177,7 +177,7 @@ manylinux1-x86.test: manylinux1-x86
 # base
 #
 
-base: Dockerfile imagefiles/
+base: Dockerfile
 	$(DOCKER) build -t $(ORG)/base:latest \
 		--build-arg IMAGE=$(ORG)/base \
 		--build-arg VCS_URL=`git config --get remote.origin.url` \
